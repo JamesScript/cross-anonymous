@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+
+* {
+  font-family: 'Inconsolata', monospace;
+}
+
+body {
+  padding: 10px;
+  background: #1A1326;
+  color: #C4EDEC;
+  text-align: center;
+}
+
+a {
+  color: #9F8EFF;
+}
+
+a:visited {
+  color: #D1C9FF;
+}
+
+textarea, input {
+  font-size: 20px;
+  background: #D5E5D8;
+  padding: 5px;
+  border: 3px inset #C5D5C8;
+}
+
+input[type="submit"] {
+  -webkit-appearance: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.submitBtn {
+  background: #C0E5C8;
+  border: 3px outset #D0F5D8;
+}
+
+.submitBtn:active {
+  border: 3px inset #D0F5D8;
+}
+
+.reportBtn {
+  background: #F2D882;
+  border: 3px outset #FEEE99;
+}
+
+.reportBtn:active {
+  border: 3px inset #FEEE99;
+}
+
+.deleteBtn {
+  background: #D30A3C;
+  border: 3px outset #CC7178;
+}
+
+.deleteBtn:active {
+  border: 3px inset #CC7178;
+}
+
+input[type="submit"]:hover {
+  color: white;
+}
+
+#siteTitle {
+  font-size: 80px;
+  margin: 100px 0;
+  transform: rotate(5deg);
+}
+
+#siteSubTitle {
+  margin: 100px;
+  transform: rotate(-5deg);
+}
+
+#anonMask {
+  position: fixed;
+  width: 300px;
+  height: auto;
+  top: 60px;
+  left: calc(50vw - 150px);
+  z-index: -1;
+}
+
+hr {
+  border-color: #CA5310;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.replies {
+  margin-left: 50px;
+}
+
+.reply {
+  margin: 5px;
+  padding: 5px;
+  background: #523056;
+}
+
+.reply:nth-child(odd) {
+  background: #523056;
+}
+
+.reply:nth-child(even) {
+  background: #4B274F;
+}
+
+.newReply {
+  margin: 10px 5px 10px 5px;
+}
+
+@media only screen and (max-width: 758px) {
+  .replies {
+    overflow-x: scroll;
+  } 
+}
+
+.thread {
+  text-align: left;
+  border: 2px solid #847E89;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.id {
+  font-size: 10.5px;
+}
+
+#submitNewThread {
+  margin: 50px;
+}
+
+#submitNewThread * {
+  margin: 5px;
+}
+
+#boardDisplay {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #1B0A21;
+}
+
+#freeCodeCampContents {
+  display: none;
+}
